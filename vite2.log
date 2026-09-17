@@ -1,0 +1,172 @@
+
+> gokul-portfolio-frontend@1.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m1391[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m7:46:02 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m7:46:02 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m7:49:18 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/AuthContext.jsx, /src/index.css, /src/pages/ProjectDetail.jsx, /src/pages/AdminDashboard.jsx, /src/components/Contact.jsx, /src/components/Projects.jsx[22m
+[2m7:49:19 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/AuthContext.jsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m7:49:19 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/contexts/AuthContext.jsx[22m
+[2m7:49:43 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/AuthContext.jsx, /src/index.css[22m
+[2m7:49:44 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/AuthContext.jsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m7:49:44 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/contexts/AuthContext.jsx[22m
+[2m7:50:04 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminLogin.jsx, /src/index.css[22m
+[2m7:50:14 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminLogin.jsx, /src/index.css[22m
+[2m7:50:24 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminLogin.jsx, /src/index.css[22m
+[2m7:51:01 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminDashboard.jsx, /src/index.css[22m
+[2m7:51:23 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m7:51:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m7:51:55 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/index.css[22m
+[2m7:52:05 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/index.css[22m
+[2m7:52:15 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/index.css[22m
+[2m7:52:29 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/index.css[22m
+[2m7:52:49 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/index.css[22m
+[2m7:53:04 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m7:53:16 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m7:53:27 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m7:53:38 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m7:53:51 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m7:54:01 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m7:54:10 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m7:54:23 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m7:54:41 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Contact.jsx, /src/index.css[22m
+[2m7:54:53 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Contact.jsx, /src/index.css[22m
+[2m7:55:07 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Contact.jsx, /src/index.css[22m
+[2m7:55:41 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/About.jsx, /src/index.css[22m
+[2m7:55:51 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/About.jsx, /src/index.css[22m
+[2m7:56:05 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/About.jsx, /src/index.css[22m
+[2m8:16:00 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/AuthContext.jsx, /src/index.css, /src/pages/ProjectDetail.jsx, /src/pages/AdminDashboard.jsx, /src/components/Contact.jsx, /src/components/Projects.jsx, /src/App.jsx, /src/components/Navbar.jsx, /src/components/Hero.jsx, /src/components/Footer.jsx, /src/components/About.jsx[22m
+[2m8:16:01 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/AuthContext.jsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m8:16:01 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/contexts/AuthContext.jsx[22m
+[2m8:16:22 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/AuthContext.jsx, /src/index.css, /src/pages/ProjectDetail.jsx, /src/pages/AdminDashboard.jsx, /src/components/Contact.jsx, /src/components/Projects.jsx, /src/App.jsx, /src/components/Navbar.jsx, /src/components/Hero.jsx, /src/components/Footer.jsx, /src/components/About.jsx[22m
+[2m8:16:23 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/AuthContext.jsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m8:16:23 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/contexts/AuthContext.jsx[22m
+[2m8:38:03 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/index.css[22m
+[2m8:45:24 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/AuthContext.jsx, /src/index.css, /src/pages/ProjectDetail.jsx, /src/pages/AdminDashboard.jsx, /src/components/Contact.jsx, /src/components/Projects.jsx, /src/App.jsx, /src/components/Navbar.jsx, /src/components/Hero.jsx, /src/components/Footer.jsx, /src/components/About.jsx[22m
+[2m8:45:57 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/AuthContext.jsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m8:45:57 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/contexts/AuthContext.jsx[22m
+[2m8:46:15 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminDashboard.jsx, /src/index.css[22m
+[2m8:46:34 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminDashboard.jsx, /src/index.css[22m
+[2m8:46:59 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminDashboard.jsx, /src/index.css[22m
+[2m8:47:23 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminDashboard.jsx, /src/index.css[22m
+[2m8:48:16 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminDashboard.jsx, /src/index.css[22m
+[2m8:48:40 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AdminDashboard.jsx, /src/index.css[22m
+[2m8:59:24 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/AuthContext.jsx, /src/index.css, /src/pages/ProjectDetail.jsx, /src/pages/AdminDashboard.jsx, /src/components/Contact.jsx, /src/components/Projects.jsx, /src/App.jsx, /src/components/Navbar.jsx, /src/components/Hero.jsx, /src/components/Footer.jsx, /src/components/About.jsx[22m
+[2m8:59:26 pm[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/AuthContext.jsx[22m Could not Fast Refresh ("useAuth" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m8:59:26 pm[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/contexts/AuthContext.jsx[22m
+[2m9:00:09 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Projects.jsx, /src/index.css[22m
+[2m9:00:42 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m9:00:42 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/skills[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/projects[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/skills[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/projects[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:00:48 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m9:02:23 pm[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[2m9:02:23 pm[22m [36m[1m[vite][22m[39m server restarted.
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.71.111.178:[1m5173[22m/[39m
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/skills[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/projects[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/skills[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/projects[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:02:27 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/settings[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2m9:03:05 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/Projects.jsx[22m
+[2m9:03:09 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/projects[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
