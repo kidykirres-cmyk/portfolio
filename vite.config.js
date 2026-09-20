@@ -48,19 +48,41 @@ async function getInfinityFreeCookie() {
   } catch { return null }
 }
 
-export default defineConfig(async () => {
-  let infinityCookie = null
-  try {
-    infinityCookie = await getInfinityFreeCookie()
-    if (infinityCookie) console.log('[vite] InfinityFree __test cookie obtained:', infinityCookie.slice(0,8)+'...')
-    else console.log('[vite] InfinityFree cookie not needed or fetch failed, proxy will run without it')
-  } catch (e) {
-    console.log('[vite] InfinityFree bypass setup failed:', e.message)
+// Cache for the cookie with timestamp
+let cookieCache = { value: null, fetchedAt: 0, promise: null }
+const COOKIE_TTL = 5 * 60 * 1000 // 5 minutes
+
+async function getFreshCookie() {
+  const now = Date.now()
+  if (cookieCache.value && (now - cookieCache.fetchedAt) < COOKIE_TTL) {
+    return cookieCache.value
   }
+  // Avoid concurrent fetches
+  if (cookieCache.promise) {
+    return cookieCache.promise
+  }
+  cookieCache.promise = getInfinityFreeCookie().then(cookie => {
+    cookieCache.promise = null
+    if (cookie) {
+      cookieCache = { value: cookie, fetchedAt: Date.now(), promise: null }
+      console.log('[vite] InfinityFree __test cookie refreshed:', cookie.slice(0, 8) + '...')
+    }
+    return cookie
+  })
+  return cookieCache.promise
+}
 
-  const proxyHeaders = {}
-  if (infinityCookie) proxyHeaders['Cookie'] = `__test=${infinityCookie}`
+// Pre-fetch cookie on startup and then periodically
+function startCookieRefresher() {
+  getFreshCookie() // initial fetch
+  setInterval(() => {
+    cookieCache = { value: null, fetchedAt: 0, promise: null } // force refresh
+    getFreshCookie()
+  }, COOKIE_TTL)
+}
 
+export default defineConfig(() => {
+  startCookieRefresher()
   return {
     plugins: [react()],
     server: {
@@ -74,18 +96,19 @@ export default defineConfig(async () => {
           target: 'https://gokulk.freedev.app',
           changeOrigin: true,
           secure: true,
-          headers: proxyHeaders,
           configure: (proxy) => {
             proxy.on('proxyReq', (proxyReq) => {
-              if (infinityCookie) proxyReq.setHeader('Cookie', `__test=${infinityCookie}`)
+              // Use cached cookie synchronously - no await in proxyReq
+              if (cookieCache.value) proxyReq.setHeader('Cookie', `__test=${cookieCache.value}`)
               proxyReq.setHeader('Accept', 'application/json')
               proxyReq.setHeader('User-Agent', 'Mozilla/5.0')
             })
             proxy.on('proxyRes', (proxyRes, req) => {
-              // If InfinityFree still returns HTML challenge, log hint
+              // If InfinityFree still returns HTML challenge, invalidate cache to force refresh on next request
               const ct = proxyRes.headers['content-type'] || ''
               if (ct.includes('text/html')) {
-                console.log(`[vite proxy] Got HTML for ${req.url} - InfinityFree challenge may have renewed, restart vite to refresh cookie`)
+                console.log(`[vite proxy] Got HTML for ${req.url} - InfinityFree challenge renewed, invalidating cookie cache`)
+                cookieCache = { value: null, fetchedAt: 0, promise: null }
               }
             })
           }
@@ -94,13 +117,21 @@ export default defineConfig(async () => {
           target: 'https://gokulk.freedev.app',
           changeOrigin: true,
           secure: true,
-          headers: proxyHeaders,
+          configure: (proxy) => {
+            proxy.on('proxyReq', (proxyReq) => {
+              if (cookieCache.value) proxyReq.setHeader('Cookie', `__test=${cookieCache.value}`)
+            })
+          }
         },
         '/sanctum': {
           target: 'https://gokulk.freedev.app',
           changeOrigin: true,
           secure: true,
-          headers: proxyHeaders,
+          configure: (proxy) => {
+            proxy.on('proxyReq', (proxyReq) => {
+              if (cookieCache.value) proxyReq.setHeader('Cookie', `__test=${cookieCache.value}`)
+            })
+          }
         },
       }
     },
