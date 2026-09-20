@@ -9,7 +9,8 @@ import axios from 'axios'
 const rawEnvUrl = import.meta.env.VITE_API_URL || 'https://gokulk.freedev.app/api/'
 const envUrl = rawEnvUrl.replace(/\/$/, '') // strip trailing slash → https://gokulk.freedev.app/api
 const isLocalBackend = envUrl.includes('localhost') || envUrl.includes('127.0.0.1')
-const API_URL = isLocalBackend ? envUrl : (import.meta.env.DEV ? '/api' : envUrl)
+// Use relative /api in both DEV (Vite proxy) and PROD (Netlify edge function)
+const API_URL = isLocalBackend ? envUrl : '/api'
 const BASE_URL = API_URL.startsWith('http') ? API_URL.replace(/\/api\/?$/, '') : 'https://gokulk.freedev.app'
 
 export const api = axios.create({
